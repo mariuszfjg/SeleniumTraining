@@ -1,0 +1,14 @@
+1518978088889	geckodriver	INFO	geckodriver 0.19.1
+1518978088897	geckodriver	INFO	Listening on 127.0.0.1:56957
+1518978091947	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\mariu\\AppData\\Local\\Temp\\rust_mozprofile.h3YRILuylWnK"
+Unable to read VR Path Registry from C:\Users\mariu\AppData\Local\openvr\openvrpaths.vrpath
+1518978092409	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\mariu\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\mariu\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\mariu\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\mariu\AppData\Local\openvr\openvrpaths.vrpath
+1518978093524	Marionette	INFO	Listening on port 56977
+1518978093955	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 16104, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+Child 6932, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6932, Chrome_Child
