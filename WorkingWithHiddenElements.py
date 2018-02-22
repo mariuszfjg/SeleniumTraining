@@ -38,22 +38,28 @@ class WorkingWithHiddenElements:
         driver.get(self.url_expedia)
         driver.implicitly_wait(3)
 
-        dropdown_children_amount = driver.find_element_by_id("package-1-children-hp-package")
-        selector_dropdown_children_amount = Select(dropdown_children_amount)
-        print("Selecting 0 children")
-        selector_dropdown_children_amount.select_by_visible_text('0')
+        flight_tab = driver.find_element_by_id("tab-flight-tab-hp")
+        flight_tab.click()
 
+        dropdown_children_amount = driver.find_element_by_id("flight-children-hp-flight")
+        selector_dropdown_children_amount = Select(dropdown_children_amount)
+
+        print("No clicking check")
         self.is_selector_age_children_displayed(driver)
 
+        print("Select 1 child check")
         selector_dropdown_children_amount.select_by_visible_text('1')
+        self.is_selector_age_children_displayed(driver)
 
+        print("Select 0 child check")
+        selector_dropdown_children_amount.select_by_visible_text('0')
         self.is_selector_age_children_displayed(driver)
 
         driver.quit()
 
     def is_selector_age_children_displayed(self, driver):
         try:
-            children_age_element = driver.find_element_by_id("package-1-age-select-1-hp-package")
+            children_age_element = driver.find_element_by_id("flight-age-select-1-hp-flight")
             children_age_element_status = children_age_element.is_displayed()
             print("Status of element 'children-age-selector' is: " + str(children_age_element_status))
         except sce.NoSuchElementException:
