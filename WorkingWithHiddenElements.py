@@ -1,6 +1,5 @@
 from selenium import webdriver
 import selenium.common.exceptions as sce
-import time
 from selenium.webdriver.support.select import Select
 
 
