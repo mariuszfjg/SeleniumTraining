@@ -15,7 +15,7 @@ class WindowSize:
         height = driver.execute_script("return window.innerHeight;")
         width = driver.execute_script("return window.innerWidth;")
 
-        print("Window has size (H/W) : {0}/{1}".format(str(height),
+        print("Window has size (H/W) : {0}px/{1}px".format(str(height),
                                                        str(width)
                                                        ))
 
