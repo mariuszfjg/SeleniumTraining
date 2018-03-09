@@ -22,7 +22,13 @@ class SwitchIFrame:
         search_box = driver.find_element_by_id('search-courses')
         search_box.send_keys('python')
 
+        time.sleep(3)
 
+        driver.switch_to.default_content()
+
+        driver.execute_script('window.scrollBy(0, -1000);')
+        time.sleep(3)
+        driver.find_element_by_id('name').send_keys('Test success')
 
 
 def main():
