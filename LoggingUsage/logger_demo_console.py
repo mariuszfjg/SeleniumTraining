@@ -28,7 +28,8 @@ class LoggerDemoConsole:
         self.console_handler.setLevel(log_level)
 
     def initialize_formatter(self):
-        self.formatter = logging.Formatter('%(asctime)s: '
+        self.formatter = logging.Formatter('%(asctime)s - '
+                                           '%(name)s - '
                                            '%(levelname)s: '
                                            '%(message)s',
                                            datefmt='%d/%m/%Y '
