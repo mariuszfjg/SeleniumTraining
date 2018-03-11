@@ -8,7 +8,7 @@ class LoggerDemoConsole:
         self.formatter = None
 
     def test_log(self):
-        self.initialize_logger(log_name='sample_logger',
+        self.initialize_logger(log_name=LoggerDemoConsole.__name__,
                                log_level=logging.INFO)
 
         self.initialize_console_handler(log_level=logging.INFO)
